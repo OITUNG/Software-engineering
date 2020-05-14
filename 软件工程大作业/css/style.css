@@ -1,0 +1,167 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 1.8;
+	font-family: "微软雅黑";
+}
+
+.div{
+	margin: 0px auto;
+	padding: 0px 0px;
+	position: relative;
+	background-color: #FFFFFF;
+}
+
+.div h3{ /*标题*/
+	color: #0000ff;
+	font-size: 20px;
+}
+
+.div .tooltip{ /*鼠标样式变化*/
+	color: #2b2b2b;
+	cursor: pointer;
+}
+
+.tooltip-box{ /*提示框样式*/
+	display: block;
+	background-color: #FFFFFF;
+	line-height: 1.6; /*行高*/
+	border: 1.5px solid #da0000; /*提示框边框颜色*/
+	color: #333333; /*框内内容颜色*/
+	padding: 20px;  /*内边距*/
+	font-size: 12px;/*字体大小*/
+	border-radius: 5px;/*圆角效果*/
+	overflow: auto; /*滑动*/
+}
+
+/*防疫知识 样式设置*/
+.part_4_2{
+	margin-top: 100px;
+	height: auto;
+}
+
+.part_4_2_introdution{
+	margin-top: 20px;
+}
+
+.part_4_2_title{
+	font-size: 20px;
+	color: #d40000;
+	font-weight: 500;
+}
+
+.part_4_head_text{
+    content: attr(data-text);
+    display: block;
+    position: absolute;
+    color: #BF183E;
+    top: 0;
+	font-size: 30px;
+	margin-left: 38.5%;
+    -webkit-mask-image: -webkit-gradient(linear,0 0,0 bottom,from(rgba(255, 137, 137, 0.0)),to(#BF183E));
+    mask-image: -webkit-gradient(linear,0 0,0 bottom,from(rgba(0,0,255,0)),to(#BF183E));
+}
+
+.part_4_ques{
+	font-size: 1rem;
+	height: 1rem;
+	line-height: 1rem;
+	font-weight: 700;
+	vertical-align: middle;
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+	margin-bottom: .625rem;
+}
+
+.part_4_2_a{
+	margin-top: 10px;
+}
+
+.part_5{
+	margin-top: 90px;
+	height: auto;
+}
+
+.html_in{
+	 width: 100%;
+	 height: 550px;
+}
+.a_html{
+	margin-top: 100px;
+}
+
+
+/*黑色标题*/
+.jtdq_title{
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+/*国内外具体地区数据*/
+.jtdq_table{
+	table-layout: fixed;
+	width: 100%;
+	margin-top: 2px;
+	text-align: center;
+	border-spacing: 0 .3125rem;
+	font-size: .8125rem;
+	color: #4d5054;
+}
+
+.jtdq_table thead tr {
+    line-height: 1;
+}
+
+.table_head{
+    color: #555;
+    font-size: .75rem;
+    font-weight: 700;
+    height: 2.0625rem;
+}
+
+.tri_angle{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-image: url(../img/triangle.png);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.table_body{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    color: #555;
+}
+
+tr.table_body_1:active{
+	background-color:#eee
+}
+.name {
+    width: auto!important;
+    color: #cc0505;
+    min-height: 1.875rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: .53125rem 0;
+    line-height: 1.25rem;
+    box-sizing: border-box;
+    padding-left: .5rem;
+    font-weight: 700;
+}
+
+.VirusTable_1-1-262_s83y8p tr:last-child{border-bottom:1px solid #f5f5f5}

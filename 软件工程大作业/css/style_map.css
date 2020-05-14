@@ -1,0 +1,163 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 12px;
+}
+
+.map_rota{
+	width: 100%;
+	height: 700px;
+	margin-top: 110px;
+	border: 0px;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.map_rota-title{
+	height: 50px;
+	position: relative;
+	background-color: #e3e6eb;
+}
+
+.map_rota-title ul{
+	position: absolute;
+	width: 100%;
+	left: -1;
+}
+
+.map_rota-title li{
+	float: left;
+	width: 24.7%;
+	height: 50px;
+	line-height:50px;
+	text-align: center;
+	padding: 0 1px;
+	border-bottom: 1px solid #EEEEEE;
+	overflow: hidden;
+}
+
+.map_rota li a:link,.map_rota-title li a:visited{ /*取消下划线*/
+	text-decoration: none;
+	color: #000000;
+}
+
+.map_rota li a:hover{ /*高亮*/
+	color: #d40000;
+	font-weight: 700;
+}
+
+.map_rota-title li.select{
+	background: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left: 1px solid #EEEEEE;
+	border-right: 1px solid #EEEEEE;
+	border-radius: 10px;
+	padding: 0;
+}
+
+.map_rota .map_rota-content .map_rota-ct{
+	margin: 10px 10px 10px 19px;
+}
+
+.map_rota .map_rota-content .map_rota-ct ul li{
+	float: left;
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+}
+
+.jump_botton{
+	margin-top: 20px;
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+.jump_botton button a:link,.jump_botton-title button a:visited{ /*取消下划线*/
+	text-decoration: none;
+	color: #000000;
+}
+.jump_botton-title{
+	height: 50px;
+	position: absolute;
+	margin-bottom: 10px;
+	text-align: center;
+}
+button{
+	background: none;
+	border: 1px solid #000000;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	min-width: 160px;
+	margin: 10px;
+	cursor: pointer;
+	transition: color 0.4s linear;
+	border-radius: 10px;
+	position: relative;
+	font-size: 15px;
+}
+
+a{
+	text-decoration: none;
+	
+}
+
+a:link {
+  color:#FF0000;
+  text-decoration:underline;
+}
+a:visited {
+  color:#00FF00;
+  text-decoration:none;
+}
+a:hover {
+  color:#000000;
+  text-decoration:none;
+}
+a:active {
+  color:#FFFFFF;
+  text-decoration:none;
+}
+
+.jump_botton button a:hover{ /*高亮*/
+	color: #d40000;
+	font-weight: 700;
+}
+
+/* .jump_botton button.select{
+	background: #ffe2e2;
+	
+} */
+
+.btn:hover{
+	color: #FFFFFF;
+}
+
+.btn::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	z-index: -1;
+	transition: transform 0.5s;
+	transform-origin: 0 0;
+	transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+.btn1::before{
+	transform: scaleX(0);
+}
+
+.btn1:hover::before{
+	transform: scaleX(1);
+}
+
+.jump_botton-title ul{
+	position: absolute;
+	width: 100%;
+	left: -1;
+}

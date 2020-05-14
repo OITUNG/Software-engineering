@@ -1,0 +1,1713 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link type="text/css" rel="stylesheet" href="css/style_map.css"/>
+		<link type="text/css" rel="stylesheet" href="css/style_table.css" />
+		<link type="text/css" rel="stylesheet" href="css/style.css" />
+		<script src="js/SortTable.js"></script>
+	</head>
+	<body>
+		<div class="part_3_jtdq">
+			<div class="jtdq_title">国外各国家疫情统计汇总</div>
+			<div id="foreign_table">
+				<table class="jtdq_table">
+					<thead>
+						<tr class="table_head">
+							<th>
+								<div> <span style="margin-right: 3px;">疫情地区名称</span> </div>
+							</th>
+							<th id="th1" onclick="SortTable(this)" class="as">
+								<div>
+									<span style="margin-right: 3px;">新增</span>
+									<span class="tri_angle"></span>
+								</div>
+							</th>
+							<th id="th2" onclick="SortTable(this)" class="as">
+								<div>
+									<span style="margin-right: 3px;">现有</span> 
+									<span class="tri_angle"></span>
+								</div>
+							</th>
+							<th id="th3" onclick="SortTable(this)" class="as">
+								<div>
+									<span style="margin-right: 3px;">累计</span>
+									<span class="tri_angle"></span>
+								</div>
+							</th>
+							<th id="th4" onclick="SortTable(this)" class="as">
+								<div>
+									<span style="margin-right: 3px;">治愈</span>
+									<span class="tri_angle"></span>
+								</div>
+							</th>
+							<th id="th5" onclick="SortTable(this)" class="as">
+								<div>
+									<span style="margin-right: 3px;">死亡</span>
+									<span class="tri_angle"></span>
+								</div>
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td colspan="6">
+								<table class="table_body">
+									<tr class="table_body_1">
+										<td name="td0" class="name">美国</td>
+										<td name="td1">20685</td>
+										<td name="td2">1028465</td>
+										<td name="td3">1408636</td>
+										<td name="td4">296746</td>
+										<td name="td5">83425</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">英国</td>
+										<td name="td1">3403</td>
+										<td name="td2">192756</td>
+										<td name="td3">226463</td>
+										<td name="td4">1015</td>
+										<td name="td5">32692</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">俄罗斯</td>
+										<td name="td1">10899</td>
+										<td name="td2">186615</td>
+										<td name="td3">232243</td>
+										<td name="td4">43512</td>
+										<td name="td5">2116</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">法国</td>
+										<td name="td1">802</td>
+										<td name="td2">93449</td>
+										<td name="td3">178225</td>
+										<td name="td4">57785</td>
+										<td name="td5">26991</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">巴西</td>
+										<td name="td1">8446</td>
+										<td name="td2">93156</td>
+										<td name="td3">178214</td>
+										<td name="td4">72597</td>
+										<td name="td5">12461</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">意大利</td>
+										<td name="td1">1402</td>
+										<td name="td2">81266</td>
+										<td name="td3">221216</td>
+										<td name="td4">109039</td>
+										<td name="td5">30911</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">西班牙</td>
+										<td name="td1">1377</td>
+										<td name="td2">62130</td>
+										<td name="td3">269520</td>
+										<td name="td4">180470</td>
+										<td name="td5">26920</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">印度</td>
+										<td name="td1">3475</td>
+										<td name="td2">47612</td>
+										<td name="td3">74480</td>
+										<td name="td4">24453</td>
+										<td name="td5">2415</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">秘鲁</td>
+										<td name="td1">3237</td>
+										<td name="td2">46678</td>
+										<td name="td3">72059</td>
+										<td name="td4">23324</td>
+										<td name="td5">2057</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">土耳其</td>
+										<td name="td1">1704</td>
+										<td name="td2">38692</td>
+										<td name="td3">141475</td>
+										<td name="td4">98889</td>
+										<td name="td5">3894</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">荷兰</td>
+										<td name="td1">196</td>
+										<td name="td2">37152</td>
+										<td name="td3">42984</td>
+										<td name="td4">322</td>
+										<td name="td5">5510</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">加拿大</td>
+										<td name="td1">1124</td>
+										<td name="td2">31946</td>
+										<td name="td3">71157</td>
+										<td name="td4">34042</td>
+										<td name="td5">5169</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">比利时</td>
+										<td name="td1">330</td>
+										<td name="td2">31286</td>
+										<td name="td3">53779</td>
+										<td name="td4">13732</td>
+										<td name="td5">8761</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">沙特阿拉伯</td>
+										<td name="td1">1911</td>
+										<td name="td2">27404</td>
+										<td name="td3">42925</td>
+										<td name="td4">15257</td>
+										<td name="td5">264</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">巴基斯坦</td>
+										<td name="td1">1662</td>
+										<td name="td2">24817</td>
+										<td name="td3">34366</td>
+										<td name="td4">8812</td>
+										<td name="td5">737</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">厄瓜多尔</td>
+										<td name="td1">910				</td>
+										<td name="td2">24659</td>
+										<td name="td3">30419</td>
+										<td name="td4">3433</td>
+										<td name="td5">2327</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">葡萄牙</td>
+										<td name="td1">234</td>
+										<td name="td2">23737</td>
+										<td name="td3">27913</td>
+										<td name="td4">3013</td>
+										<td name="td5">1163</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">卡塔尔</td>
+										<td name="td1">1526</td>
+										<td name="td2">22116</td>
+										<td name="td3">25149</td>
+										<td name="td4">3019</td>
+										<td name="td5">14</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">新加坡</td>
+										<td name="td1">884</td>
+										<td name="td2">20799</td>
+										<td name="td3">24671</td>
+										<td name="td4">3851</td>
+										<td name="td5">21</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">瑞典</td>
+										<td name="td1">602</td>
+										<td name="td2">18988</td>
+										<td name="td3">27272</td>
+										<td name="td4">4971</td>
+										<td name="td5">3313</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">德国</td>
+										<td name="td1">595</td>
+										<td name="td2">18233</td>
+										<td name="td3">173171</td>
+										<td name="td4">147200</td>
+										<td name="td5">7738</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">白俄罗斯</td>
+										<td name="td1">967</td>
+										<td name="td2">17757</td>
+										<td name="td3">24873</td>
+										<td name="td4">6974</td>
+										<td name="td5">142</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">智利</td>
+										<td name="td1">1658</td>
+										<td name="td2">17261</td>
+										<td name="td3">31721</td>
+										<td name="td4">14125</td>
+										<td name="td5">335</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">伊朗</td>
+										<td name="td1">1481</td>
+										<td name="td2">15677</td>
+										<td name="td3">110767</td>
+										<td name="td4">88357</td>
+										<td name="td5">6733</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">阿拉伯联合酋长国</td>
+										<td name="td1">680</td>
+										<td name="td2">13446</td>
+										<td name="td3">19661</td>
+										<td name="td4">6012</td>
+										<td name="td5">203</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">孟加拉国</td>
+										<td name="td1">969</td>
+										<td name="td2">13263</td>
+										<td name="td3">16660</td>
+										<td name="td4">3147</td>
+										<td name="td5">250</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">乌克兰</td>
+										<td name="td1">402</td>
+										<td name="td2">12270</td>
+										<td name="td3">16425</td>
+										<td name="td4">3716</td>
+										<td name="td5">439</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">印度尼西亚</td>
+										<td name="td1">484</td>
+										<td name="td2">10679</td>
+										<td name="td3">14749</td>
+										<td name="td4">3063</td>
+										<td name="td5">1007</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">波兰</td>
+										<td name="td1">595</td>
+										<td name="td2">9951</td>
+										<td name="td3">16921</td>
+										<td name="td4">6131</td>
+										<td name="td5">839</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">哥伦比亚</td>
+										<td name="td1">659</td>
+										<td name="td2">8808</td>
+										<td name="td3">12272</td>
+										<td name="td4">2971</td>
+										<td name="td5">493</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">菲律宾</td>
+										<td name="td1">264</td>
+										<td name="td2">8493</td>
+										<td name="td3">11350</td>
+										<td name="td4">2106</td>
+										<td name="td5">751</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">墨西哥</td>
+										<td name="td1">1997</td>
+										<td name="td2">8463</td>
+										<td name="td3">38324</td>
+										<td name="td4">25935</td>
+										<td name="td5">3926</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">挪威</td>
+										<td name="td1">20</td>
+										<td name="td2">7897</td>
+										<td name="td3">8157</td>
+										<td name="td4">32</td>
+										<td name="td5">228</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">多米尼加</td>
+										<td name="td1">266</td>
+										<td name="td2">7277</td>
+										<td name="td3">10900</td>
+										<td name="td4">3221</td>
+										<td name="td5">402</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">埃及</td>
+										<td name="td1">347</td>
+										<td name="td2">7223</td>
+										<td name="td3">10093</td>
+										<td name="td4">2326</td>
+										<td name="td5">544</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">科威特</td>
+										<td name="td1">751</td>
+										<td name="td2">7683</td>
+										<td name="td3">11028</td>
+										<td name="td4">3263</td>
+										<td name="td5">82</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">罗马尼亚</td>
+										<td name="td1">190</td>
+										<td name="td2">7091</td>
+										<td name="td3">15778</td>
+										<td name="td4">7685</td>
+										<td name="td5">1002</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">南非</td>
+										<td name="td1">698</td>
+										<td name="td2">6787</td>
+										<td name="td3">11350</td>
+										<td name="td4">4357</td>
+										<td name="td5">206</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">日本</td>
+										<td name="td1">81</td>
+										<td name="td2">6451</td>
+										<td name="td3">16049</td>
+										<td name="td4">8920</td>
+										<td name="td5">678</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">塞尔维亚</td>
+										<td name="td1">67</td>
+										<td name="td2">6423</td>
+										<td name="td3">10243</td>
+										<td name="td4">3600</td>
+										<td name="td5">220</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">爱尔兰</td>
+										<td name="td1">107</td>
+										<td name="td2">4644</td>
+										<td name="td3">23242</td>
+										<td name="td4">17110</td>
+										<td name="td5">1488</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">加纳</td>
+										<td name="td1">427</td>
+										<td name="td2">4611</td>
+										<td name="td3">5127</td>
+										<td name="td4">494</td>
+										<td name="td5">22</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">阿根廷</td>
+										<td name="td1">285</td>
+										<td name="td2">4382</td>
+										<td name="td3">6563</td>
+										<td name="td4">1862</td>
+										<td name="td5">319</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">阿富汗</td>
+										<td name="td1">276</td>
+										<td name="td2">4226</td>
+										<td name="td3">4963</td>
+										<td name="td4">610</td>
+										<td name="td5">127</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">以色列</td>
+										<td name="td1">23</td>
+										<td name="td2">4186</td>
+										<td name="td3">16529</td>
+										<td name="td4">12083</td>
+										<td name="td5">260</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">尼日利亚</td>
+										<td name="td1">146</td>
+										<td name="td2">3670</td>
+										<td name="td3">4787</td>
+										<td name="td4">959</td>
+										<td name="td5">158</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">巴林</td>
+										<td name="td1">295</td>
+										<td name="td2">3330</td>
+										<td name="td3">5531</td>
+										<td name="td4">2192</td>
+										<td name="td5">9</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">摩洛哥</td>
+										<td name="td1">137</td>
+										<td name="td2">3239</td>
+										<td name="td3">6418</td>
+										<td name="td4">2991</td>
+										<td name="td5">188</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">哈萨克斯坦</td>
+										<td name="td1">138</td>
+										<td name="td2">3162</td>
+										<td name="td3">5417</td>
+										<td name="td4">2223</td>
+										<td name="td5">32</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">捷克</td>
+										<td name="td1">22</td>
+										<td name="td2">3049</td>
+										<td name="td3">8222</td>
+										<td name="td4">4890</td>
+										<td name="td5">283</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">摩尔多瓦</td>
+										<td name="td1">159</td>
+										<td name="td2">2903</td>
+										<td name="td3">5154</td>
+										<td name="td4">2069</td>
+										<td name="td5">182</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">阿尔及利亚</td>
+										<td name="td1">176</td>
+										<td name="td2">2554</td>
+										<td name="td3">6067</td>
+										<td name="td4">2998</td>
+										<td name="td5">515</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">玻利维亚</td>
+										<td name="td1">133</td>
+										<td name="td2">2523</td>
+										<td name="td3">2964</td>
+										<td name="td4">313</td>
+										<td name="td5">128</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">巴拿马</td>
+										<td name="td1">167</td>
+										<td name="td2">2510</td>
+										<td name="td3">8783</td>
+										<td name="td4">6021</td>
+										<td name="td5">252</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">阿曼</td>
+										<td name="td1">148</td>
+										<td name="td2">2454</td>
+										<td name="td3">3721</td>
+										<td name="td4">1250</td>
+										<td name="td5">17</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">亚美尼亚</td>
+										<td name="td1">180</td>
+										<td name="td2">2240</td>
+										<td name="td3">3718</td>
+										<td name="td4">1430</td>
+										<td name="td5">48</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">匈牙利</td>
+										<td name="td1">28</td>
+										<td name="td2">1809</td>
+										<td name="td3">3341</td>
+										<td name="td4">1102</td>
+										<td name="td5">430</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">洪都拉斯</td>
+										<td name="td1">108</td>
+										<td name="td2">1748</td>
+										<td name="td3">2080</td>
+										<td name="td4">211</td>
+										<td name="td5">121</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">瑞士</td>
+										<td name="td1">36</td>
+										<td name="td2">1713</td>
+										<td name="td3">30380</td>
+										<td name="td4">26800</td>
+										<td name="td5">1867</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">丹麦</td>
+										<td name="td1">78</td>
+										<td name="td2">1484</td>
+										<td name="td3">10591</td>
+										<td name="td4">8580</td>
+										<td name="td5">527</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">保加利亚</td>
+										<td name="td1">46</td>
+										<td name="td2">1474</td>
+										<td name="td3">2069</td>
+										<td name="td4">499</td>
+										<td name="td5">96</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">几内亚</td>
+										<td name="td1">152</td>
+										<td name="td2">1471</td>
+										<td name="td3">2298</td>
+										<td name="td4">816</td>
+										<td name="td5">11</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">芬兰</td>
+										<td name="td1">19</td>
+										<td name="td2">1428</td>
+										<td name="td3">6003</td>
+										<td name="td4">4300</td>
+										<td name="td5">275</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">马来西亚</td>
+										<td name="td1">16</td>
+										<td name="td2">1410</td>
+										<td name="td3">6742</td>
+										<td name="td4">5223</td>
+										<td name="td5">109</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">苏丹</td>
+										<td name="td1">135</td>
+										<td name="td2">1408</td>
+										<td name="td3">1661</td>
+										<td name="td4">173</td>
+										<td name="td5">80</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">塞内加尔</td>
+										<td name="td1">109</td>
+										<td name="td2">1234</td>
+										<td name="td3">1995</td>
+										<td name="td4">742</td>
+										<td name="td5">19</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">希腊</td>
+										<td name="td1">18</td>
+										<td name="td2">1218</td>
+										<td name="td3">2744</td>
+										<td name="td4">1374</td>
+										<td name="td5">152</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">奥地利</td>
+										<td name="td1">79</td>
+										<td name="td2">1190</td>
+										<td name="td3">15961</td>
+										<td name="td4">14148</td>
+										<td name="td5">623</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">斯洛文尼亚</td>
+										<td name="td1">1</td>
+										<td name="td2">1100</td>
+										<td name="td3">1461</td>
+										<td name="td4">259</td>
+										<td name="td5">102</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">危地马拉</td>
+										<td name="td1">85</td>
+										<td name="td2">1052</td>
+										<td name="td3">1199</td>
+										<td name="td4">120</td>
+										<td name="td5">27</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">喀麦隆</td>
+										<td name="td1">110</td>
+										<td name="td2">1040</td>
+										<td name="td3">2689</td>
+										<td name="td4">1524</td>
+										<td name="td5">125</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">科特迪瓦</td>
+										<td name="td1">127</td>
+										<td name="td2">1016</td>
+										<td name="td3">1857</td>
+										<td name="td4">820</td>
+										<td name="td5">21</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">韩国</td>
+										<td name="td1">26</td>
+										<td name="td2">1008</td>
+										<td name="td3">10962</td>
+										<td name="td4">9695</td>
+										<td name="td5">259</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">索马里</td>
+										<td name="td1">81</td>
+										<td name="td2">992</td>
+										<td name="td3">1170</td>
+										<td name="td4">126</td>
+										<td name="td5">52</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">阿塞拜疆</td>
+										<td name="td1">104</td>
+										<td name="td2">980</td>
+										<td name="td3">2693</td>
+										<td name="td4">1680</td>
+										<td name="td5">33</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">刚果（金）</td>
+										<td name="td1">33</td>
+										<td name="td2">912</td>
+										<td name="td3">1102</td>
+										<td name="td4">146</td>
+										<td name="td5">44</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">爱沙尼亚</td>
+										<td name="td1">5</td>
+										<td name="td2">908</td>
+										<td name="td3">1746</td>
+										<td name="td4">777</td>
+										<td name="td5">61</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">伊拉克</td>
+										<td name="td1">95</td>
+										<td name="td2">898</td>
+										<td name="td3">2913</td>
+										<td name="td4">1903</td>
+										<td name="td5">112</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">波黑</td>
+										<td name="td1">17</td>
+										<td name="td2">873</td>
+										<td name="td3">2158</td>
+										<td name="td4">1168</td>
+										<td name="td5">117</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">马尔代夫</td>
+										<td name="td1">7</td>
+										<td name="td2">872</td>
+										<td name="td3">904</td>
+										<td name="td4">29</td>
+										<td name="td5">3</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">几内亚比绍</td>
+										<td name="td1">59</td>
+										<td name="td2">791</td>
+										<td name="td3">820</td>
+										<td name="td4">26</td>
+										<td name="td5">3</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">加蓬</td>
+										<td name="td1">61</td>
+										<td name="td2">717</td>
+										<td name="td3">863</td>
+										<td name="td4">137</td>
+										<td name="td5">9</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">塔吉克斯坦</td>
+										<td name="td1">68</td>
+										<td name="td2">708</td>
+										<td name="td3">729</td>
+										<td name="td4">0</td>
+										<td name="td5">21</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">萨尔瓦多</td>
+										<td name="td1">39</td>
+										<td name="td2">643</td>
+										<td name="td3">1037</td>
+										<td name="td4">374</td>
+										<td name="td5">20</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">澳大利亚</td>
+										<td name="td1">16</td>
+										<td name="td2">612</td>
+										<td name="td3">6980</td>
+										<td name="td4">6270</td>
+										<td name="td5">98</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">黎巴嫩</td>
+										<td name="td1">11</td>
+										<td name="td2">610</td>
+										<td name="td3">870</td>
+										<td name="td4">234</td>
+										<td name="td5">26</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">立陶宛</td>
+										<td name="td1">6</td>
+										<td name="td2">591</td>
+										<td name="td3">1491</td>
+										<td name="td4">850</td>
+										<td name="td5">50</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">马约特</td>
+										<td name="td1">72</td>
+										<td name="td2">591</td>
+										<td name="td3">1095</td>
+										<td name="td4">492</td>
+										<td name="td5">12</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">巴拉圭</td>
+										<td name="td1">13</td>
+										<td name="td2">554</td>
+										<td name="td3">737</td>
+										<td name="td4">173</td>
+										<td name="td5">10</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">乌兹别克斯坦</td>
+										<td name="td1">49</td>
+										<td name="td2">518</td>
+										<td name="td3">2568</td>
+										<td name="td4">2040</td>
+										<td name="td5">10</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">斯里兰卡</td>
+										<td name="td1">26</td>
+										<td name="td2">514</td>
+										<td name="td3">889</td>
+										<td name="td4">366</td>
+										<td name="td5">9</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">斯洛伐克</td>
+										<td name="td1">8</td>
+										<td name="td2">455</td>
+										<td name="td3">1465</td>
+										<td name="td4">983</td>
+										<td name="td5">27</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">古巴</td>
+										<td name="td1">21</td>
+										<td name="td2">449</td>
+										<td name="td3">1804</td>
+										<td name="td4">1277</td>
+										<td name="td5">78</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">塞浦路斯</td>
+										<td name="td1">2</td>
+										<td name="td2">438</td>
+										<td name="td3">903</td>
+										<td name="td4">449</td>
+										<td name="td5">16</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">圣马力诺</td>
+										<td name="td1">10</td>
+										<td name="td2">436</td>
+										<td name="td3">638</td>
+										<td name="td4">161</td>
+										<td name="td5">41</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">赤道几内亚</td>
+										<td name="td1">124</td>
+										<td name="td2">422</td>
+										<td name="td3">439</td>
+										<td name="td4">13</td>
+										<td name="td5">4</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">肯尼亚</td>
+										<td name="td1">15</td>
+										<td name="td2">420</td>
+										<td name="td3">715</td>
+										<td name="td4">259</td>
+										<td name="td5">36</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">牙买加</td>
+										<td name="td1">2</td>
+										<td name="td2">398</td>
+										<td name="td3">507</td>
+										<td name="td4">100</td>
+										<td name="td5">9</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">北马其顿</td>
+										<td name="td1">10</td>
+										<td name="td2">377</td>
+										<td name="td3">1674</td>
+										<td name="td4">1205</td>
+										<td name="td5">92</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">吉布提</td>
+										<td name="td1">29</td>
+										<td name="td2">367</td>
+										<td name="td3">1256</td>
+										<td name="td4">886</td>
+										<td name="td5">3</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">赞比亚</td>
+										<td name="td1">174</td>
+										<td name="td2">317</td>
+										<td name="td3">441</td>
+										<td name="td4">117</td>
+										<td name="td5">7</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">克罗地亚</td>
+										<td name="td1">11</td>
+										<td name="td2">308</td>
+										<td name="td3">2207</td>
+										<td name="td4">1808</td>
+										<td name="td5">91</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">吉尔吉斯斯坦</td>
+										<td name="td1">7</td>
+										<td name="td2">306</td>
+										<td name="td3">1044</td>
+										<td name="td4">726</td>
+										<td name="td5">12</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">拉脱维亚</td>
+										<td name="td1">1</td>
+										<td name="td2">305</td>
+										<td name="td3">951</td>
+										<td name="td4">627</td>
+										<td name="td5">19</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">坦桑尼亚</td>
+										<td name="td1">29</td>
+										<td name="td2">305</td>
+										<td name="td3">509</td>
+										<td name="td4">183</td>
+										<td name="td5">21</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">马里</td>
+										<td name="td1">18</td>
+										<td name="td2">292</td>
+										<td name="td3">730</td>
+										<td name="td4">398</td>
+										<td name="td5">40</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">哥斯达黎加</td>
+										<td name="td1">3</td>
+										<td name="td2">277</td>
+										<td name="td3">804</td>
+										<td name="td4">520</td>
+										<td name="td5">7</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">刚果（布）</td>
+										<td name="td1">59</td>
+										<td name="td2">269</td>
+										<td name="td3">333</td>
+										<td name="td4">53</td>
+										<td name="td5">11</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">格鲁吉亚</td>
+										<td name="td1">4</td>
+										<td name="td2">264</td>
+										<td name="td3">647</td>
+										<td name="td4">372</td>
+										<td name="td5">11</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">突尼斯</td>
+										<td name="td1">2</td>
+										<td name="td2">260</td>
+										<td name="td3">1032</td>
+										<td name="td4">727</td>
+										<td name="td5">45</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">贝宁</td>
+										<td name="td1">8</td>
+										<td name="td2">249</td>
+										<td name="td3">327</td>
+										<td name="td4">76</td>
+										<td name="td5">2</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">塞拉利昂</td>
+										<td name="td1">31</td>
+										<td name="td2">247</td>
+										<td name="td3">338</td>
+										<td name="td4">72</td>
+										<td name="td5">19</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">乍得</td>
+										<td name="td1">35</td>
+										<td name="td2">241</td>
+										<td name="td3">357</td>
+										<td name="td4">76</td>
+										<td name="td5">40</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">佛得角</td>
+										<td name="td1">14</td>
+										<td name="td2">207</td>
+										<td name="td3">267</td>
+										<td name="td4">58</td>
+										<td name="td5">2</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">圣多美和普林西比</td>
+										<td name="td1">13</td>
+										<td name="td2">199</td>
+										<td name="td3">208</td>
+										<td name="td4">4</td>
+										<td name="td5">5</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">委内瑞拉</td>
+										<td name="td1">1</td>
+										<td name="td2">193</td>
+										<td name="td3">423</td>
+										<td name="td4">220</td>
+										<td name="td5">10</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">南苏丹</td>
+										<td name="td1">38</td>
+										<td name="td2">192</td>
+										<td name="td3">194</td>
+										<td name="td4">2</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">海地</td>
+										<td name="td1">10</td>
+										<td name="td2">184</td>
+										<td name="td3">219</td>
+										<td name="td4">17</td>
+										<td name="td5">18</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">尼泊尔</td>
+										<td name="td1">83</td>
+										<td name="td2">184</td>
+										<td name="td3">217</td>
+										<td name="td4">33</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">卢森堡</td>
+										<td name="td1">6</td>
+										<td name="td2">182</td>
+										<td name="td3">3894</td>
+										<td name="td4">3610</td>
+										<td name="td5">102</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">约旦</td>
+										<td name="td1">14</td>
+										<td name="td2">177</td>
+										<td name="td3">576</td>
+										<td name="td4">390</td>
+										<td name="td5">9</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">乌拉圭</td>
+										<td name="td1">6</td>
+										<td name="td2">166</td>
+										<td name="td3">717</td>
+										<td name="td4">532</td>
+										<td name="td5">19</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">中非共和国 </td>
+										<td name="td1">9</td>
+										<td name="td2">133</td>
+										<td name="td3">143</td>
+										<td name="td4">10</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">布基纳法索 </td>
+										<td name="td1">6</td>
+										<td name="td2">127</td>
+										<td name="td3">766</td>
+										<td name="td4">588</td>
+										<td name="td5">51</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name"> 泰国</td>
+										<td name="td1">2</td>
+										<td name="td2">117</td>
+										<td name="td3">3017</td>
+										<td name="td4">2844</td>
+										<td name="td5">56</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name"> 利比里亚</td>
+										<td name="td1">1</td>
+										<td name="td2">106</td>
+										<td name="td3">212</td>
+										<td name="td4">86</td>
+										<td name="td5">20</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">缅甸 </td>
+										<td name="td1">0</td>
+										<td name="td2">98</td>
+										<td name="td3">180</td>
+										<td name="td4">76</td>
+										<td name="td5">6</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">多哥 </td>
+										<td name="td1">18</td>
+										<td name="td2">96</td>
+										<td name="td3">199</td>
+										<td name="td4">92</td>
+										<td name="td5">11</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name"> 马达加斯加</td>
+										<td name="td1">35</td>
+										<td name="td2">85</td>
+										<td name="td3">186</td>
+										<td name="td4">101</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">留尼汪岛 </td>
+										<td name="td1">1</td>
+										<td name="td2">83</td>
+										<td name="td3">437</td>
+										<td name="td4">354</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">马提尼克 </td>
+										<td name="td1">1</td>
+										<td name="td2">82</td>
+										<td name="td3">187</td>
+										<td name="td4">91</td>
+										<td name="td5">14</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">新西兰 </td>
+										<td name="td1">3</td>
+										<td name="td2">78</td>
+										<td name="td3">1497</td>
+										<td name="td4">1398</td>
+										<td name="td5">21</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">乌干达 </td>
+										<td name="td1">5</td>
+										<td name="td2">71</td>
+										<td name="td3">126</td>
+										<td name="td4">55</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">莫桑比克 </td>
+										<td name="td1">1</td>
+										<td name="td2">70</td>
+										<td name="td3">104</td>
+										<td name="td4">34</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">马耳他 </td>
+										<td name="td1">3</td>
+										<td name="td2">67</td>
+										<td name="td3">506</td>
+										<td name="td4">434</td>
+										<td name="td5">5</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">圭亚那合作共和国  </td>
+										<td name="td1">4</td>
+										<td name="td2">67</td>
+										<td name="td3">113</td>
+										<td name="td4">36</td>
+										<td name="td5">10</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">巴勒斯坦 </td>
+										<td name="td1">0</td>
+										<td name="td2">65</td>
+										<td name="td3">375</td>
+										<td name="td4">308</td>
+										<td name="td5">2</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">也门 </td>
+										<td name="td1">9</td>
+										<td name="td2">54</td>
+										<td name="td3">65</td>
+										<td name="td4">1</td>
+										<td name="td5">10</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">海峡群岛 </td>
+										<td name="td1">1</td>
+										<td name="td2">50</td>
+										<td name="td3">547</td>
+										<td name="td4">455</td>
+										<td name="td5">42</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">钻石公主号邮轮 </td>
+										<td name="td1">0</td>
+										<td name="td2">48</td>
+										<td name="td3">712</td>
+										<td name="td4">651</td>
+										<td name="td5">13</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">百慕大 </td>
+										<td name="td1">2</td>
+										<td name="td2">47</td>
+										<td name="td3">121</td>
+										<td name="td4">66</td>
+										<td name="td5">8</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">巴哈马 </td>
+										<td name="td1">0</td>
+										<td name="td2">43</td>
+										<td name="td3">93</td>
+										<td name="td4">39</td>
+										<td name="td5">11</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">马恩岛 </td>
+										<td name="td1">1</td>
+										<td name="td2">36</td>
+										<td name="td3">331</td>
+										<td name="td4">272</td>
+										<td name="td5">23</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">越南 </td>
+										<td name="td1">0</td>
+										<td name="td2">36</td>
+										<td name="td3">288</td>
+										<td name="td4">252</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">开曼群岛 </td>
+										<td name="td1">1</td>
+										<td name="td2">34</td>
+										<td name="td3">85</td>
+										<td name="td4">50</td>
+										<td name="td5">1</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">瓜德罗普 </td>
+										<td name="td1">1</td>
+										<td name="td2">33</td>
+										<td name="td3">155</td>
+										<td name="td4">109</td>
+										<td name="td5">13</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">利比亚 </td>
+										<td name="td1">1</td>
+										<td name="td2">33</td>
+										<td name="td3">64</td>
+										<td name="td4">28</td>
+										<td name="td5">3</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">阿尔巴尼亚 </td>
+										<td name="td1">4</td>
+										<td name="td2">163</td>
+										<td name="td3">876</td>
+										<td name="td4">682</td>
+										<td name="td5">31</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">尼日尔 </td>
+										<td name="td1">22</td>
+										<td name="td2">159</td>
+										<td name="td3">854</td>
+										<td name="td4">648</td>
+										<td name="td5">47</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">斯威士兰 </td>
+										<td name="td1">9</td>
+										<td name="td2">154</td>
+										<td name="td3">184</td>
+										<td name="td4">28</td>
+										<td name="td5">2</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">埃塞俄比亚 </td>
+										<td name="td1">11</td>
+										<td name="td2">150</td>
+										<td name="td3">261</td>
+										<td name="td4">106</td>
+										<td name="td5">5</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name"> 安道尔</td>
+										<td name="td1">3</td>
+										<td name="td2">142</td>
+										<td name="td3">758</td>
+										<td name="td4">568</td>
+										<td name="td5">48</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name"> 卢旺达</td>
+										<td name="td1">1</td>
+										<td name="td2">133</td>
+										<td name="td3">286</td>
+										<td name="td4">153</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">马拉维 </td>
+										<td name="td1">1</td>
+										<td name="td2">30</td>
+										<td name="td3">57</td>
+										<td name="td4">24</td>
+										<td name="td5">3</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name"> 安哥拉</td>
+										<td name="td1">2</td>
+										<td name="td2">30</td>
+										<td name="td3">45</td>
+										<td name="td4">13</td>
+										<td name="td5">2</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">法属圭亚那 </td>
+										<td name="td1">9</td>
+										<td name="td2">28</td>
+										<td name="td3">153</td>
+										<td name="td4">124</td>
+										<td name="td5">1</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name"> 蒙古国</td>
+										<td name="td1">0</td>
+										<td name="td2">27</td>
+										<td name="td3">42</td>
+										<td name="td4">15</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">列支敦士登 </td>
+										<td name="td1">1</td>
+										<td name="td2">26</td>
+										<td name="td3">82</td>
+										<td name="td4">55</td>
+										<td name="td5">1</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">津巴布韦 </td>
+										<td name="td1">1</td>
+										<td name="td2">23</td>
+										<td name="td3">36</td>
+										<td name="td4">9</td>
+										<td name="td5">4</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">巴巴多斯 </td>
+										<td name="td1">1</td>
+										<td name="td2">21</td>
+										<td name="td3">85</td>
+										<td name="td4">57</td>
+										<td name="td5">7</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">黑山 </td>
+										<td name="td1">0</td>
+										<td name="td2">17</td>
+										<td name="td3">324</td>
+										<td name="td4">298</td>
+										<td name="td5">9</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">冰岛 </td>
+										<td name="td1">0</td>
+										<td name="td2">15</td>
+										<td name="td3">1801</td>
+										<td name="td4">1776</td>
+										<td name="td5">10</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">圣马丁岛 </td>
+										<td name="td1">0</td>
+										<td name="td2">15</td>
+										<td name="td3">76</td>
+										<td name="td4">46</td>
+										<td name="td5">15</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name"> 叙利亚</td>
+										<td name="td1">2</td>
+										<td name="td2">15</td>
+										<td name="td3">47</td>
+										<td name="td4">29</td>
+										<td name="td5">3</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name"> 冈比亚</td>
+										<td name="td1">1</td>
+										<td name="td2">12</td>
+										<td name="td3">23</td>
+										<td name="td4">10</td>
+										<td name="td5">1</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">尼加拉瓜 </td>
+										<td name="td1">9</td>
+										<td name="td2">10</td>
+										<td name="td3">25</td>
+										<td name="td4">7</td>
+										<td name="td5">8</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">梵蒂冈 </td>
+										<td name="td1">1</td>
+										<td name="td2">10</td>
+										<td name="td3">12</td>
+										<td name="td4">2</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name"> 科摩罗</td>
+										<td name="td1">3</td>
+										<td name="td2">10</td>
+										<td name="td3">11</td>
+										<td name="td4">0</td>
+										<td name="td5">1</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">阿鲁巴 </td>
+										<td name="td1">1</td>
+										<td name="td2">9</td>
+										<td name="td3">101</td>
+										<td name="td4">89</td>
+										<td name="td5">3</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">格林纳达 </td>
+										<td name="td1">1</td>
+										<td name="td2">8</td>
+										<td name="td3">21</td>
+										<td name="td4">13</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name"> 摩纳哥</td>
+										<td name="td1">1</td>
+										<td name="td2">7</td>
+										<td name="td3">96</td>
+										<td name="td4">85</td>
+										<td name="td5">4</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">布隆迪 </td>
+										<td name="td1">4</td>
+										<td name="td2">7</td>
+										<td name="td3">15</td>
+										<td name="td4">7</td>
+										<td name="td5">1</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">文莱 </td>
+										<td name="td1">2</td>
+										<td name="td2">6</td>
+										<td name="td3">141</td>
+										<td name="td4">134</td>
+										<td name="td5">1</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">博茨瓦纳 </td>
+										<td name="td1">0				</td>
+										<td name="td2">6</td>
+										<td name="td3">24</td>
+										<td name="td4">17</td>
+										<td name="td5">1</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name"> 老挝</td>
+										<td name="td1">0</td>
+										<td name="td2">6</td>
+										<td name="td3">19</td>
+										<td name="td4">13</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">不丹</td>
+										<td name="td1">2</td>
+										<td name="td2">6</td>
+										<td name="td3">11</td>
+										<td name="td4">5</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">圣文森特和格林纳丁斯 </td>
+										<td name="td1">0</td>
+										<td name="td2">5</td>
+										<td name="td3">17</td>
+										<td name="td4">12</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name"> 纳米比亚</td>
+										<td name="td1">0</td>
+										<td name="td2">5</td>
+										<td name="td3">16</td>
+										<td name="td4">11</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">直布罗陀 </td>
+										<td name="td1">1</td>
+										<td name="td2">4</td>
+										<td name="td3">148</td>
+										<td name="td4">144</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">斐济</td>
+										<td name="td1">0</td>
+										<td name="td2">4</td>
+										<td name="td3">18</td>
+										<td name="td4">14</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">安提瓜和巴布达</td>
+										<td name="td1">1</td>
+										<td name="td2">3</td>
+										<td name="td3">25</td>
+										<td name="td4">19</td>
+										<td name="td5">3</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">东帝汶</td>
+										<td name="td1">0</td>
+										<td name="td2">3</td>
+										<td name="td3">24</td>
+										<td name="td4">21</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">特克斯和凯科斯群岛</td>
+										<td name="td1">0</td>
+										<td name="td2">3</td>
+										<td name="td3">12</td>
+										<td name="td4">8</td>
+										<td name="td5">1</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">法属波利尼西亚</td>
+										<td name="td1">0</td>
+										<td name="td2">2</td>
+										<td name="td3">60</td>
+										<td name="td4">58</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">蒙特塞拉特</td>
+										<td name="td1">0</td>
+										<td name="td2">2</td>
+										<td name="td3">11</td>
+										<td name="td4">8</td>
+										<td name="td5">1</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">毛里塔尼亚</td>
+										<td name="td1">1</td>
+										<td name="td2">2</td>
+										<td name="td3">9</td>
+										<td name="td4">6</td>
+										<td name="td5">1</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">英属维尔京群岛</td>
+										<td name="td1">1</td>
+										<td name="td2">2</td>
+										<td name="td3">7</td>
+										<td name="td4">4</td>
+										<td name="td5">1</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">柬埔寨</td>
+										<td name="td1">0</td>
+										<td name="td2">1</td>
+										<td name="td3">122</td>
+										<td name="td4">121</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">特立尼达和多巴哥</td>
+										<td name="td1">0</td>
+										<td name="td2">1</td>
+										<td name="td3">116</td>
+										<td name="td4">107</td>
+										<td name="td5">8</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">厄立特里亚</td>
+										<td name="td1">0</td>
+										<td name="td2">1</td>
+										<td name="td3">39</td>
+										<td name="td4">38</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">圣卢西亚</td>
+										<td name="td1">1</td>
+										<td name="td2">1</td>
+										<td name="td3">18</td>
+										<td name="td4">17</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">多米尼克</td>
+										<td name="td1">0</td>
+										<td name="td2">1</td>
+										<td name="td3">16</td>
+										<td name="td4">15</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">库拉索</td>
+										<td name="td1">0</td>
+										<td name="td2">1</td>
+										<td name="td3">16</td>
+										<td name="td4">14</td>
+										<td name="td5">1</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">圣基茨和尼维斯</td>
+										<td name="td1">0</td>
+										<td name="td2">1</td>
+										<td name="td3">15</td>
+										<td name="td4">14</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">塞舌尔</td>
+										<td name="td1">0</td>
+										<td name="td2">1</td>
+										<td name="td3">11</td>
+										<td name="td4">10</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">毛里求斯</td>
+										<td name="td1"></td>
+										<td name="td2">0</td>
+										<td name="td3">322</td>
+										<td name="td4">322</td>
+										<td name="td5">10</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">法罗群岛</td>
+										<td name="td1">0</td>
+										<td name="td2">0</td>
+										<td name="td3">187</td>
+										<td name="td4">187</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">新喀里多尼亚</td>
+										<td name="td1">0</td>
+										<td name="td2">0</td>
+										<td name="td3">18</td>
+										<td name="td4">18</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">伯利兹</td>
+										<td name="td1">0</td>
+										<td name="td2">0</td>
+										<td name="td3">18</td>
+										<td name="td4">16</td>
+										<td name="td5">2</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">福克兰群岛马尔维纳斯</td>
+										<td name="td1">0</td>
+										<td name="td2">0</td>
+										<td name="td3">13</td>
+										<td name="td4">13</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">格陵兰岛</td>
+										<td name="td1">10</td>
+										<td name="td2">0</td>
+										<td name="td3">11</td>
+										<td name="td4">11</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">苏里南</td>
+										<td name="td1">0</td>
+										<td name="td2">0</td>
+										<td name="td3">10</td>
+										<td name="td4">9</td>
+										<td name="td5">1</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">巴布亚新几内亚</td>
+										<td name="td1">0</td>
+										<td name="td2">0</td>
+										<td name="td3">8</td>
+										<td name="td4">8</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">圣巴泰勒米岛</td>
+										<td name="td1">0</td>
+										<td name="td2">0</td>
+										<td name="td3">6</td>
+										<td name="td4">6</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">安圭拉</td>
+										<td name="td1">0</td>
+										<td name="td2">0</td>
+										<td name="td3">3</td>
+										<td name="td4">3</td>
+										<td name="td5">0</td>
+									</tr>
+									<tr class="table_body_1">
+										<td name="td0" class="name">圣皮埃尔</td>
+										<td name="td1">0</td>
+										<td name="td2">0</td>
+										<td name="td3">1</td>
+										<td name="td4">1</td>
+										<td name="td5">0</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <style >
+		table {
+		font-family: verdana,arial,sans-serif;
+		font-size:11px;
+		color:#333333;
+		border-width: 1px;
+		border-color: #999999;
+		border-collapse: collapse;
+		}
+		 th {
+		background-color:#c3dde0;
+		border-width: 1px;
+		padding: 8px;
+		border-style: solid;
+		border-color: #a9c6c9;
+		}
+		 tr {
+		background-color:#d4e3e5;
+		}
+		 td {
+		border-width: 1px;
+		padding: 8px;
+		border-style: solid;
+		border-color: #a9c6c9;
+		}
+		.tri_angle{
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			background-image: url(img/triangle.png);
+			background-size: cover;
+			background-position: 50%;
+			background-repeat: no-repeat;
+			position: relative;
+		}
+    </style>
+    </head>
+    <body>
+        <table align="center">
+            <tr>
+                <th width="100">疫情名称地区</span></th>
+                <th width="100" id="th1" onclick="SortTable(this)" class="as">现有确诊<span class="tri_angle"></th>
+                <th width="100" id="th2" onclick="SortTable(this)" class="as">累计确诊<span class="tri_angle"></th>
+                <th width="100" id="th3" onclick="SortTable(this)" class="as">疑似<span class="tri_angle"></th>
+				<th width="100" id="th4" onclick="SortTable(this)" class="as">死亡<span class="tri_angle"></th>
+				<th width="100" id="th5" onclick="SortTable(this)" class="as">治愈<span class="tri_angle"></th>
+            </tr>
+            <tr>
+                <td width="100" name="td0" align="center">台湾</td>
+                <td width="100" name="td1" align="center">65</td>
+                <td width="100" name="td2" align="center">440</td>
+                <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">7</td>
+				<td width="100" name="td5" align="center">368</td>
+            </tr>
+            <tr>
+                <td width="100" name="td0" align="center">香港</td>
+                <td width="100" name="td1" align="center">58</td>
+                <td width="100" name="td2" align="center">1047</td>
+                <td width="100" name="td3" align="center">0</td>
+                <td width="100" name="td4" align="center">4</td>
+            	<td width="100" name="td5" align="center">985</td>
+            </tr>
+            <tr>
+                <td width="100" name="td0" align="center">黑龙江</td>
+                <td width="100" name="td1" align="center">28</td>
+                <td width="100" name="td2" align="center">945</td>
+                <td width="100" name="td3" align="center">0</td>
+                <td width="100" name="td4" align="center">13</td>
+            	<td width="100" name="td5" align="center">904</td>
+            </tr>
+            <tr>
+                <td width="100" name="td0" align="center">上海</td>
+                <td width="100" name="td1" align="center">25</td>
+                <td width="100" name="td2" align="center">659</td>
+                <td width="100" name="td3" align="center">0</td>
+                <td width="100" name="td4" align="center">7</td>
+            	<td width="100" name="td5" align="center">627</td>
+            </tr>
+			<tr>
+			    <td width="100" name="td0" align="center">吉林</td>
+			    <td width="100" name="td1" align="center">21</td>
+			    <td width="100" name="td2" align="center">127</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">1</td>
+				<td width="100" name="td5" align="center">105</td>
+			</tr>
+			<tr>
+			    <td width="100" name="td0" align="center">内蒙古</td>
+			    <td width="100" name="td1" align="center">20</td>
+			    <td width="100" name="td2" align="center">208</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">1</td>
+				<td width="100" name="td5" align="center">187</td>
+			</tr>
+			<tr>
+			    <td width="100" name="td0" align="center">北京</td>
+			    <td width="100" name="td1" align="center">16</td>
+			    <td width="100" name="td2" align="center">593</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">9</td>
+				<td width="100" name="td5" align="center">568</td>
+			</tr>
+			<tr>
+			    <td width="100" name="td0" align="center">陕西</td>
+			    <td width="100" name="td1" align="center">11</td>
+			    <td width="100" name="td2" align="center">308</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">3</td>
+				<td width="100" name="td5" align="center">294</td>
+			</tr>
+			<tr>
+			    <td width="100" name="td0" align="center">湖北</td>
+			    <td width="100" name="td1" align="center">6</td>
+			    <td width="100" name="td2" align="center">68134</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">4512</td>
+				<td width="100" name="td5" align="center">63616</td>
+			</tr>
+			<tr>
+			    <td width="100" name="td0" align="center">广东</td>
+			    <td width="100" name="td1" align="center">4</td>
+			    <td width="100" name="td2" align="center">1589</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">8</td>
+				<td width="100" name="td5" align="center">1577</td>
+			</tr>
+			<tr>
+			    <td width="100" name="td0" align="center">山东</td>
+			    <td width="100" name="td1" align="center">4</td>
+			    <td width="100" name="td2" align="center">788</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">7</td>
+				<td width="100" name="td5" align="center">777</td>
+			</tr>
+			<tr>
+			    <td width="100" name="td0" align="center">澳门</td>
+			    <td width="100" name="td1" align="center">3</td>
+			    <td width="100" name="td2" align="center">45</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">0</td>
+				<td width="100" name="td5" align="center">42</td>
+			</tr>
+			<tr>
+			    <td width="100" name="td0" align="center">天津</td>
+			    <td width="100" name="td1" align="center">2</td>
+			    <td width="100" name="td2" align="center">191</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">3</td>
+				<td width="100" name="td5" align="center">186</td>
+			</tr>
+			<tr>
+			    <td width="100" name="td0" align="center">辽宁</td>
+			    <td width="100" name="td1" align="center">1</td>
+			    <td width="100" name="td2" align="center">147</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">2</td>
+				<td width="100" name="td5" align="center">144</td>
+			</tr>
+			<tr>
+			    <td width="100" name="td0" align="center">福建</td>
+			    <td width="100" name="td1" align="center">1</td>
+			    <td width="100" name="td2" align="center">356</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">1</td>
+				<td width="100" name="td5" align="center">354</td>
+			</tr>
+			<tr>
+			    <td width="100" name="td0" align="center">山西</td>
+			    <td width="100" name="td1" align="center">1</td>
+			    <td width="100" name="td2" align="center">198</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">0</td>
+				<td width="100" name="td5" align="center">197</td>
+			</tr>
+			<tr>
+			    <td width="100" name="td0" align="center">河北</td>
+			    <td width="100" name="td1" align="center">1</td>
+			    <td width="100" name="td2" align="center">328</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">6</td>
+				<td width="100" name="td5" align="center">321</td>
+			</tr>
+			<tr>
+			    <td width="100" name="td0" align="center">浙江</td>
+			    <td width="100" name="td1" align="center">0</td>
+			    <td width="100" name="td2" align="center">1268</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">1</td>
+				<td width="100" name="td5" align="center">1267</td>
+			</tr>
+			<tr>
+			    <td width="100" name="td0" align="center">云南</td>
+			    <td width="100" name="td1" align="center">0</td>
+			    <td width="100" name="td2" align="center">185</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">2</td>
+				<td width="100" name="td5" align="center">183</td>
+			</tr>
+			<tr>
+			    <td width="100" name="td0" align="center">新疆</td>
+			    <td width="100" name="td1" align="center">0</td>
+			    <td width="100" name="td2" align="center">76</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">3</td>
+				<td width="100" name="td5" align="center">73</td>
+			</tr>
+			<tr>
+			    <td width="100" name="td0" align="center">宁夏</td>
+			    <td width="100" name="td1" align="center">0</td>
+			    <td width="100" name="td2" align="center">75</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">0</td>
+				<td width="100" name="td5" align="center">75</td>
+			</tr>
+			<tr>
+			    <td width="100" name="td0" align="center">湖南</td>
+			    <td width="100" name="td1" align="center">0</td>
+			    <td width="100" name="td2" align="center">1019</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">4</td>
+				<td width="100" name="td5" align="center">1015</td>
+			</tr>
+			<tr>
+			    <td width="100" name="td0" align="center">甘肃</td>
+			    <td width="100" name="td1" align="center">0</td>
+			    <td width="100" name="td2" align="center">139</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">2</td>
+				<td width="100" name="td5" align="center">137</td>
+			</tr>
+			<tr>
+			    <td width="100" name="td0" align="center">河南</td>
+			    <td width="100" name="td1" align="center">0</td>
+			    <td width="100" name="td2" align="center">1276</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">22</td>
+				<td width="100" name="td5" align="center">1254</td>
+			</tr>
+			<tr>
+			    <td width="100" name="td0" align="center">江西</td>
+			    <td width="100" name="td1" align="center">0</td>
+			    <td width="100" name="td2" align="center">937</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">1</td>
+				<td width="100" name="td5" align="center">936</td>
+			</tr>
+			<tr>
+			    <td width="100" name="td0" align="center">广西</td>
+			    <td width="100" name="td1" align="center">0</td>
+			    <td width="100" name="td2" align="center">254</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">2</td>
+				<td width="100" name="td5" align="center">252</td>
+			</tr>
+			<tr>
+			    <td width="100" name="td0" align="center">青海</td>
+			    <td width="100" name="td1" align="center">0</td>
+			    <td width="100" name="td2" align="center">18</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">0</td>
+				<td width="100" name="td5" align="center">18</td>
+			</tr>
+			<tr>
+			    <td width="100" name="td0" align="center">海南</td>
+			    <td width="100" name="td1" align="center">0</td>
+			    <td width="100" name="td2" align="center">168</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">6</td>
+				<td width="100" name="td5" align="center">162</td>
+			</tr>
+			<tr>
+			    <td width="100" name="td0" align="center">四川</td>
+			    <td width="100" name="td1" align="center">1</td>
+			    <td width="100" name="td2" align="center">561</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">3</td>
+				<td width="100" name="td5" align="center">558</td>
+			</tr>
+			<tr>
+			    <td width="100" name="td0" align="center">重庆</td>
+			    <td width="100" name="td1" align="center">0</td>
+			    <td width="100" name="td2" align="center">579</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">6</td>
+				<td width="100" name="td5" align="center">573</td>
+			</tr>
+			<tr>
+			    <td width="100" name="td0" align="center">贵州</td>
+			    <td width="100" name="td1" align="center">0</td>
+			    <td width="100" name="td2" align="center">147</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">2</td>
+				<td width="100" name="td5" align="center">145</td>
+			</tr>
+			<tr>
+			    <td width="100" name="td0" align="center">安徽</td>
+			    <td width="100" name="td1" align="center">0</td>
+			    <td width="100" name="td2" align="center">991</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">6</td>
+				<td width="100" name="td5" align="center">985</td>
+			</tr>
+			<tr>
+			    <td width="100" name="td0" align="center">江苏</td>
+			    <td width="100" name="td1" align="center">0</td>
+			    <td width="100" name="td2" align="center">653</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">0</td>
+				<td width="100" name="td5" align="center">653</td>
+			</tr>
+			<tr>
+			    <td width="100" name="td0" align="center">西藏</td>
+			    <td width="100" name="td1" align="center">0</td>
+			    <td width="100" name="td2" align="center">1</td>
+			    <td width="100" name="td3" align="center">0</td>
+			    <td width="100" name="td4" align="center">0</td>
+				<td width="100" name="td5" align="center">1</td>
+			</tr>
+			
+        </table>
+    </body>
+
+</html>
+<script type="text/javascript"> 
+    var tag=1;
+    function sortNumberAS(a, b)
+    {
+        return a - b    
+    }
+    function sortNumberDesc(a, b)
+    {
+        return b-a
+    }
+
+    function SortTable(obj){
+        var td0s=document.getElementsByName("td0");
+        var td1s=document.getElementsByName("td1");
+        var td2s=document.getElementsByName("td2");
+        var td3s=document.getElementsByName("td3");
+		var td4s=document.getElementsByName("td4");
+		var td5s=document.getElementsByName("td5");
+        var tdArray0=[];
+        var tdArray1=[];
+        var tdArray2=[];
+        var tdArray3=[];
+		var tdArray4=[];
+		var tdArray5=[];
+        for(var i=0;i<td0s.length;i++){
+            tdArray0.push(td0s[i].innerHTML);
+        }
+        for(var i=0;i<td1s.length;i++){
+            tdArray1.push(parseInt(td1s[i].innerHTML));
+        }
+        for(var i=0;i<td2s.length;i++){
+            tdArray2.push(parseInt(td2s[i].innerHTML));
+        }
+        for(var i=0;i<td3s.length;i++){
+            tdArray3.push(parseInt(td3s[i].innerHTML));
+        }
+		for(var i=0;i<td4s.length;i++){
+		    tdArray4.push(parseInt(td4s[i].innerHTML));
+		}
+		for(var i=0;i<td5s.length;i++){
+		    tdArray5.push(parseInt(td5s[i].innerHTML));
+		}
+        var tds=document.getElementsByName("td"+obj.id.substr(2,1));
+        var columnArray=[];
+        for(var i=0;i<tds.length;i++){
+            columnArray.push(parseInt(tds[i].innerHTML));
+        }
+        var orginArray=[];
+        for(var i=0;i<columnArray.length;i++){
+            orginArray.push(columnArray[i]);
+        }
+        if(obj.className=="as"){
+            columnArray.sort(sortNumberAS);               //排序后的新值
+            obj.className="desc";
+        }else{
+            columnArray.sort(sortNumberDesc);               //排序后的新值
+            obj.className="as";
+        }
+
+
+        for(var i=0;i<columnArray.length;i++){
+            for(var j=0;j<orginArray.length;j++){
+                if(orginArray[j]==columnArray[i]){
+                    document.getElementsByName("td0")[i].innerHTML=tdArray0[j];
+                    document.getElementsByName("td1")[i].innerHTML=tdArray1[j];
+                    document.getElementsByName("td2")[i].innerHTML=tdArray2[j];
+                    document.getElementsByName("td3")[i].innerHTML=tdArray3[j];
+					document.getElementsByName("td4")[i].innerHTML=tdArray4[j];
+					document.getElementsByName("td5")[i].innerHTML=tdArray5[j];
+                    orginArray[j]=null;
+                    break;
+                }
+            }
+        }
+    }
+</script>
