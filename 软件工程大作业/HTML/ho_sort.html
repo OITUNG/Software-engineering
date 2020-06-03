@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link type="text/css" rel="stylesheet" href="../css/style_map.css" />
+		<link type="text/css" rel="stylesheet" href="../css/style_table.css" />
+		<link type="text/css" rel="stylesheet" href="../css/style.css" />
+		<script type="text/javascript">
+			var conn = new ActiveXObject("ADODB.Connection");
+			conn.Open("Driver={SQL server};Server=.;DataBase=yq;UID=sa;Password=628;"); 
+			//打开数据库 DateBase是数据库名，UID是sql server登录名 password是登录密码
+			var rs = new ActiveXObject("ADODB.Recordset");
+			var sql = "select * from home"; //Test是表名
+			rs.open(sql, conn);
+			shtml = "<table class='jtdq_table' align='center'>";
+			shtml +=
+				"<tr class='table_head'><td width='100' align='center'>疫情地区</td><th width='100' id='th1' onclick='SortTable(this)' class='as'>现有确诊</span><span class='tri_angle'></th><th width='100' id='th2' onclick='SortTable(this)' class='as'>累计确诊<span class='tri_angle'></th><th width='100' id='th3' onclick='SortTable(this)' class='as'>疑似<span class='tri_angle'></th><th width='100' id='th4' onclick='SortTable(this)' class='as'>死亡<span class='tri_angle'></th><th width='100' id='th5' onclick='SortTable(this)' class='as'>治愈<span class='tri_angle'></th></tr>"
+			while (!rs.EOF) {
+				shtml += "<tr><td width='100' name='td0' align='center'>" + rs("name") +
+					"</td><td width='100' name='td1' align='center'>" + rs("nowConfirm") +
+					"</td><td width='100' name='td2' align='center'>" + rs("confirm") +
+					"</td><td width='100' name='td3' align='center'>" + rs("suspect") +
+					"</td><td width='100' name='td4' align='center'>" + rs("dead") + "</td><td width='100' name='td5' align='center'>" +
+					rs("heal") + "</td></tr>";
+				rs.moveNext;
+			}
+			shtml += "</table>";
+			document.write(shtml);
+			rs.close();
+			rs = null;
+			conn.close();
+			conn = null;
+		</script>
+	</head>
+	<body></body>
+</html>
+<script type="text/javascript">
+	var tag = 1;
+
+	function sortNumberAS(a, b) {
+		return a - b
+	}
+
+	function sortNumberDesc(a, b) {
+		return b - a
+	}
+
+	function SortTable(obj) {
+		var td0s = document.getElementsByName("td0");
+		var td1s = document.getElementsByName("td1");
+		var td2s = document.getElementsByName("td2");
+		var td3s = document.getElementsByName("td3");
+		var td4s = document.getElementsByName("td4");
+		var td5s = document.getElementsByName("td5");
+		var tdArray0 = [];
+		var tdArray1 = [];
+		var tdArray2 = [];
+		var tdArray3 = [];
+		var tdArray4 = [];
+		var tdArray5 = [];
+		for (var i = 0; i < td0s.length; i++) {
+			tdArray0.push(td0s[i].innerHTML);
+		}
+		for (var i = 0; i < td1s.length; i++) {
+			tdArray1.push(parseInt(td1s[i].innerHTML));
+		}
+		for (var i = 0; i < td2s.length; i++) {
+			tdArray2.push(parseInt(td2s[i].innerHTML));
+		}
+		for (var i = 0; i < td3s.length; i++) {
+			tdArray3.push(parseInt(td3s[i].innerHTML));
+		}
+		for (var i = 0; i < td4s.length; i++) {
+			tdArray4.push(parseInt(td4s[i].innerHTML));
+		}
+		for (var i = 0; i < td5s.length; i++) {
+			tdArray5.push(parseInt(td5s[i].innerHTML));
+		}
+		var tds = document.getElementsByName("td" + obj.id.substr(2, 1));
+		var columnArray = [];
+		for (var i = 0; i < tds.length; i++) {
+			columnArray.push(parseInt(tds[i].innerHTML));
+		}
+		var orginArray = [];
+		for (var i = 0; i < columnArray.length; i++) {
+			orginArray.push(columnArray[i]);
+		}
+		if (obj.className == "as") {
+			columnArray.sort(sortNumberAS); //排序后的新值
+			obj.className = "desc";
+		} else {
+			columnArray.sort(sortNumberDesc); //排序后的新值
+			obj.className = "as";
+		}
+		for (var i = 0; i < columnArray.length; i++) {
+			for (var j = 0; j < orginArray.length; j++) {
+				if (orginArray[j] == columnArray[i]) {
+					document.getElementsByName("td0")[i].innerHTML = tdArray0[j];
+					document.getElementsByName("td1")[i].innerHTML = tdArray1[j];
+					document.getElementsByName("td2")[i].innerHTML = tdArray2[j];
+					document.getElementsByName("td3")[i].innerHTML = tdArray3[j];
+					document.getElementsByName("td4")[i].innerHTML = tdArray4[j];
+					document.getElementsByName("td5")[i].innerHTML = tdArray5[j];
+					orginArray[j] = null;
+					break;
+				}
+			}
+		}
+	}
+</script>

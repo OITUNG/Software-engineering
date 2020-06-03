@@ -1,3 +1,4 @@
+/* 地图轮播效果 */
 *{
 	margin: 0;
 	padding: 0;
@@ -68,22 +69,24 @@
 }
 
 .jump_botton{
-	margin-top: 20px;
+	margin-top: 15px;
 	text-align: center;
 	font-size: 25px;
 	margin-bottom: 10px;
+}
+.jump_botton-title{
+	height: 50px;
+	margin-top: 20px;
+	position: absolute;
+	margin-bottom: 10px;
+	text-align: center;
 }
 
 .jump_botton button a:link,.jump_botton-title button a:visited{ /*取消下划线*/
 	text-decoration: none;
 	color: #000000;
 }
-.jump_botton-title{
-	height: 50px;
-	position: absolute;
-	margin-bottom: 10px;
-	text-align: center;
-}
+
 button{
 	background: none;
 	border: 1px solid #000000;
